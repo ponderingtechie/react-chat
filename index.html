@@ -16,6 +16,10 @@
           verify: { projectID: '64f3cdaa99d6da00085c881a' },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production'
+        }).then(() => {
+          setTimeout(function () {
+            window.voiceflow.chat.open();
+          }, 1000)
         });
       }
       v.src = "https://ponderingtechie.github.io/react-chat/packages/widget/dist/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
